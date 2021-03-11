@@ -1,0 +1,518 @@
+*{
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+html,body
+{
+    width: 100%;
+   
+    display: block;
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: black;
+}
+
+/*inicio no header/menu*/
+
+.header
+{
+    width: 100%;
+    background-image: linear-gradient(to top, rgb(0, 0, 0),rgba(8, 13, 15, 0.935),rgba(25, 25, 25, 0.925) , rgba(54, 54, 54, 0.863));
+    display: flex;
+    flex-direction: row;
+   
+   
+}
+.logo
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.logo > h1{
+    font-size: 5rem;
+    font-family:'Orbitron', sans-serif;
+    
+}
+.logo h2{
+    font-size: 2.5rem;
+    font-family: 'Orbitron', sans-serif;
+    color:#ec1a25
+    
+}
+.logo img{
+    width:40%;
+    max-width: 400px;
+    
+}
+
+#imgLogo
+{
+    
+   align-self: center;
+   flex-flow: wrap center;
+    border-radius: 250px;
+ 
+}
+#imgtransparenteSocial{
+    width:40px;
+    border-radius: 25px;
+    margin-left: -20px;
+ 
+}
+
+
+/*inicio section1*/
+.sessao1
+{
+    display:grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: /*90vh*/ 30vh  30vh 30vh 30vh;
+    grid-template-areas: /*"v1 v1"*/
+                         "m1 t1"
+                         "t2 m2"
+                         "m3 t3"
+                         "t4 m4";
+
+    max-width:1700px;
+    background-color: rgba(0, 0, 0, 0.5);
+    gap:2.5px;
+    flex-wrap: wrap;
+    margin-top:250px;
+}
+/*.video1
+{
+    display: none;
+    grid-area: v1;
+    grid-column: 3/1;
+    align-self: flex-end;
+    width: 100%;
+    max-width: 1700px;
+    max-height:70vh;
+}*/
+.mostruario1
+{
+     border-right: 8px solid #ec1a25;
+     border-bottom: 8px solid #ffffff;
+     grid-area: m1;
+     width: 100%;
+      
+}
+.mostruario2
+{
+    border-top: 8px solid #ec1a25;
+    border-left: 8px solid #ffffff;;
+    border-bottom: 8px solid #ec1a25;
+    grid-area: m2;
+    width: 100%;
+}
+.mostruario3
+{
+    border-right: 8px solid #ec1a25;
+    border-top: 8px solid #ffffff;
+    border-bottom: 8px solid #ffffff;
+    grid-area: m3;
+    width: 100%;
+    
+}
+
+.mostruario4
+{
+    border-left: 8px solid #ffffff;
+    border-top: 8px solid #ec1a25;
+    border-bottom: 8px solid #ec1a25;
+    grid-area: m4;
+    width: 100%;
+}
+.formatar{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 2rem;
+}
+.paragrafo
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 100%;
+    
+}
+
+.texto1
+{
+    grid-area: t1;
+    width: 100%;
+    border-left: 8px solid #ec1a25;
+    border-bottom: 8px solid #ffffff;
+   
+
+}
+.texto2
+{
+    grid-area: t2;
+    width: 100%;
+    border-top: 8px solid #ec1a25;
+    border-right: 8px solid #ffffff;
+    
+    border-bottom: 8px solid #ec1a25;
+    
+    
+}
+.texto3
+{
+    grid-area: t3;
+    width: 100%;
+
+    border-left: 8px solid #ec1a25;
+    border-top: 8px solid #ffffff;
+    border-bottom: 8px solid #ffffff;
+    
+}
+.texto4
+{
+    grid-area: t4;
+    width: 100%;
+    
+    border-right: 8px solid #ffffff;
+    border-top: 8px solid #ec1a25;
+    border-bottom: 8px solid #ffffff;
+    
+}
+
+/* fim da sessão 1*/
+
+/*sessão 2 e form*/
+.sessao2
+{
+    display:flex;
+    flex-direction: column;
+    flex-wrap:nowrap;
+    width: 100%;
+    max-width: 1700px;
+    max-height: 40px;
+    background-color: transparent;
+    
+}
+.container
+{
+    width: 100%;
+    background-color: black;
+}
+.megacontainer
+{
+    width: 100%;
+    height: 100%;
+}
+#subtitulo
+{
+    width: 80%; 
+    height: 90px;
+    max-height:150px;
+    font-size:1.3rem;
+    background-color:#ec1a25;
+    font-family:'Orbitron', sans-serif;
+    display: flex;
+    text-align: center;
+    padding: 8px;
+    color:rgb(255, 255, 255);
+    align-items: center;
+    justify-content: center;
+    margin-top:8px;
+}
+.formcontainer
+{
+    width: 100%; 
+    max-height: 90px;
+    height:auto;
+    font-size:100%;
+    text-align: center;
+    padding-bottom: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top:8px;
+}
+.formContainer
+{
+    width: 100%;
+}
+#contato
+{
+    
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 100%;
+    margin-top: 8px;
+    padding-top: 10px;
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+    background-color:#f0f0f0;
+    font-size:1.3rem;
+    color:rgb(0, 0, 0);
+    max-width: 700px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    
+}
+#identificador
+{
+    text-align:left;
+    align-self:left;
+    color:rgb(0, 0, 0);
+}
+#inputInfo
+{
+    width:80%;
+    line-height: 25px;
+    border: 2px solid black;
+    font-size:1rem;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+#pedido
+{
+    width: 80%;
+    max-height: 200px;
+    height: auto;
+    
+    line-height: 25px;
+    font-size:1rem;
+    resize: none;
+    border: 2px solid black;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+.buttons
+{
+    display: flex;
+    width: 60%;
+    margin-top:5px;
+    flex-direction:row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.enviar
+{
+    width: 155px;
+    height: 60px;
+    background-color: black;
+    margin-right:10px;
+    border: none;
+    color: white;
+    font-family:'Orbitron', sans-serif;
+    
+
+}
+.cancelar
+{
+    width: 155px;
+    height: 60px;
+    background-color: transparent;
+    border: none;
+    color: rgb(0, 0, 0);
+    font-family:'Orbitron', sans-serif;
+}
+
+
+/*fim da sessão 2 e form*/
+
+/*inicio do footer*/
+.footer
+{
+    width: 100%;
+    padding:20px;
+    display:flex;
+    flex-direction: column;
+    /*grid-template-columns: 1fr ;
+    grid-template-rows: 4vh 4vh 4vh ;
+    grid-template-areas:
+                        "fi wi"
+                        "mb mb mb"
+                        ;*/
+    background-color: rgb(14, 13, 13);
+}
+.contatos
+{
+    width: 100%;
+    height: 100%;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+.facebook
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 5px solid transparent;
+}
+.facebook img
+{
+    /*grid-area:fi;*/
+    
+    width: 40px;
+    height: 40px;
+    border-radius: 5px solid transparent;
+}
+.Faceb
+{
+    display: flex;
+    justify-self: flex-end;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-items:space-around;
+}
+.whatsapp
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-items:space-around;
+}
+.whatsapp img
+{
+    /*grid-area:wi;*/
+    width: 40px;
+    height: 40px;
+    border-radius: 5px solid transparent;
+}
+.madeby
+{
+    /*grid-area:mb;*/
+    width:100%
+}
+@media  screen and (max-width:900px)
+{
+    .logo
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+    
+}
+.logo h1{
+    font-size: 3rem;
+    font-family: 'Orbitron', sans-serif;
+    
+}
+.logo h2{
+    font-size: 1rem;
+    font-family: 'Orbitron', sans-serif;
+    color:#ec1a25
+    
+}
+    .sessao1
+    {
+        display:grid;
+        grid-template-columns: 1fr  ;
+        grid-template-rows: /*90vh*/ 40vh  40vh 40vh 40vh 40vh 40vh 40vh ;
+        grid-template-areas: /*"v1 v1"*/
+                            
+                             "t1 t1"
+                             "m2 m2"
+                             "t2 t2"
+                             "m3 m3"
+                             "t3 t3"
+                             "m4 m4"
+                             "t4 t4";
+    
+        width:100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        gap:2.5px;
+        flex-wrap: wrap;
+        margin-top:120px;
+    }
+    /*.video1
+    {
+        grid-area: v1;
+        grid-column: 2/1;
+        align-self: flex-end;
+        width: 100%;
+        max-width: 1700px;
+        max-height:70vh;
+    }*/
+    .mostruario1
+    {
+     
+         grid-area: m1;
+         grid-column: 2/2;
+         width: 100%;
+         
+    }
+    .mostruario2
+    {
+       
+        grid-area: m2;
+        width: 100%;
+    }
+    .mostruario3
+    {
+        
+        grid-area: m3;
+        width: 100%;
+        
+    }
+    
+    .mostruario4
+    {
+      
+        grid-area: m4;
+        width: 100%;
+    }
+    .formatar{
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-size: 1.5rem;
+        padding: 5px;
+    }
+    .paragrafo
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        height: 100%;
+        
+    }
+    
+    .texto1
+    {
+        grid-area: t1;
+        width: 100%;
+    }
+    .texto2
+    {
+        grid-area: t2;
+        width: 100%;
+
+    }
+    .texto3
+    {
+        grid-area: t3;
+        width: 100%;
+    
+        
+    }
+    .texto4
+    {
+        grid-area: t4;
+        width: 100%;
+       
+    }     
+    /*media querie do formulario*/
+    #contato
+    {
+        width: 305px;
+    }
+    .buttons
+    {
+        flex-wrap: wrap;
+    }
+    #subtitulo
+    {
+        width: 85%;   
+    }
+}
